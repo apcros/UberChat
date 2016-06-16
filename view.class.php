@@ -3,7 +3,17 @@
 
 class View
 {
-	
+
+	function chatBox($messages) {
+		echo '<div class="col s12">
+			<div class="card ">
+				<div class="card-content black-text">';
+				echo var_dump($messages);
+				echo '</div>
+			</div>
+		</div>
+	</div>';
+	}
 	function head($title) {
 		echo '  <!DOCTYPE html>
 				  <html>
